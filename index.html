@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy-A-Bear - Save a Life</title>
+    <!-- Add CSS and JS files -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <a href="#adoption">Adopt</a>
+            <a href="#donate">Donate</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="logo">
+            <h1>©Buy-A-Bear</h1>
+            <p><em>Saving Bears, One at a Time</em></p><br>
+        </div>
+    </header>
+
+    <!-- Mission Section -->
+    <section id="mission">
+        <p><em>Buy-A-Bear</em> is all about saving wild bears from the harsh consequences of humanity, whether it's a forest fire caused by a lit cigarette, forcing them to seek shelter in garbage dumps, or being hunted for sport, and brutally recycled into teddy bears for children. <em>Buy-A-Bear</em> provides an opportunity for people globally to purchase one of these bears and provide them with all of the <em>"Bear"</em> necessities that a bear could ever need.<br><br>It's simple. We provide the bears, you provide the food supply and shelter. <Strong>(+ transportation fees)</Strong></p>
+    </section>
+
+    <!-- Meet the Bears Section -->
+    <section id="adoption">
+        <h2>Meet the Bears</h2>
+
+        <div class="item">
+            <img src="istockphoto-490433050-612x612.webp" alt="Smokey the Bear"/>
+            <h4>Smokey - Kind and loving, with the added bonus of smelling like a used diaper</h4>
+            <div class="btn">$25.99</div>
+        </div>
+
+        <div class="item">
+            <img src="istockphoto-1654914100-612x612.webp" alt="Emily the Bear"/>
+            <h4>Emily - Super small, making her easy to take on airplanes</h4>
+            <div class="btn">$25.99</div>
+        </div>
+
+        <div class="item">
+            <img src="istockphoto-1404237324-612x612.webp" alt="Frank the Bear"/>
+            <h4>Frank - Toilet trained</h4>
+            <div class="btn">$25.99</div>
+        </div>
+
+        <div class="item">
+            <img src="istockphoto-1459382651-612x612.webp" alt="Fernando the Bear"/>
+            <h4>Fernando - Can speak fluent Spanish, can't understand it</h4>
+            <div class="btn">$25.99</div>
+        </div>
+
+        <div class="item">
+            <img src="istockphoto-1421052567-612x612.webp" alt="El Jefe the Bear"/>
+            <h4>El Jefe - Is NOT allowed back in Yellowstone, IS a good listener</h4>
+            <div class="btn">$25.99</div>
+        </div>
+    </section>
+
+    <!-- Donations Section -->
+    <section id="donate">
+        <h1>Donations</h1>
+        <h2>We kindly accept donations, all of which are used to supply the bears with food, water, and a hotel room for the time being.</h2>
+        <form action="donate.php" method="post">
+            <label for="donation">Donation Amount:</label>
+            <input type="number" id="donation" name="donation" min="50" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+<div class="bear-image">
+    <img src="istockphoto-1397756791-612x612.webp" alt="bear" />
+</div>
+    
+
+     <!-- Contact Us Section -->
+     <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="contact_form.php" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <br><br>
+    <footer>
+        <p>&copy; 2024 Buy-A-Bear. All Rights Reserved.</p>
+        <ul>
+            <li><a href="#privacy-policy">Privacy Policy</a></li>
+            <li><a href="#terms-of-service">Terms of Service</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
