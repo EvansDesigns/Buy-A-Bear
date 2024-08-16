@@ -41,7 +41,7 @@ body {
     padding-top: 140px; /* Adjust based on header height */
 }
 
-#adoption, #donate, #contact {
+#adoption, #donate, #contact, #mission {
     padding-top: 150px;
     padding-bottom: 10px;
     box-shadow: 0 4px 5px rgba(0, 0, 1, 0.6);
