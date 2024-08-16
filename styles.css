@@ -1,14 +1,21 @@
-/* Base styles */
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: antiquewhite;
-    font-size: 15px;
     color: black;
-    margin-top: 20px;
-    padding-top: 95px;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header and Titles */
+/* Header */
 header {
     position: fixed;
     top: 0;
@@ -16,148 +23,163 @@ header {
     width: 100%;
     background-color: antiquewhite;
     z-index: 1000;
-    display: flex;
-    flex-direction: column; /* Stack elements vertically on mobile */
-    justify-content: center;
-    align-items: center;
-    padding: 10px 5px; /* Reduce padding for smaller screens */
+    padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-nav {
     display: flex;
-    flex-direction: column; /* Stack navigation items on mobile */
+    flex-direction: column;
     align-items: center;
-    width: 100%;
 }
 
 .logo {
     text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 10px;
 }
 
-/* Adjust page content to account for fixed header */
-body {
-    padding-top: 140px; /* Adjust based on header height */
-}
-
-#adoption, #donate, #contact, #mission {
-    padding-top: 150px;
-    padding-bottom: 10px;
-    box-shadow: 0 4px 5px rgba(0, 0, 1, 0.6);
-}
-
-/* Navigation styles */
 nav a {
     border: 1px solid black;
-    padding: 8px 16px; /* Adjust padding for smaller screens */
+    padding: 8px 16px;
     border-radius: 5px;
-    margin: 5px 0; /* Space out items vertically */
+    margin: 5px;
     font-size: 1em;
     text-align: center;
     color: black;
     text-decoration: none;
     background-color: #f0f0f0;
     transition: background-color 0.3s;
-    box-shadow: 0 3px 3px rgba(0, 0, 1, 0.6);
 }
 
 nav a:hover {
     background-color: #ddd;
 }
 
-/* Title styling */
-h2, h4, p {
+/* Mission Section */
+#mission {
+    padding: 20px;
+    margin-top: 100px; /* Adjust to ensure it's below the fixed header */
     text-align: center;
-    font-size: 1.5em;
-    margin: 0.5em;
 }
 
-/* Item layout */
+/* Item Layout */
 .item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 0 5px 5px rgba(0, 0, 1, 0.6);
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.bear-image {
-    display: flex;
-    justify-content: center;
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.btn {
     width: 100%;
+    max-width: 200px;
     padding: 10px;
     margin: 10px 0;
-    border: 5px solid black;
-    border-radius: 10px;
-    background-color: #584b4b;
-    box-shadow: 0 6px 5px rgba(0, 0, 1, 0.6);
-}
-
-/* Button styles */
-.btn {
-    border: 1px solid black;
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin-top: 10px;
-    font-size: 1em;
     text-align: center;
     background-color: #f0f0f0;
+    border: 1px solid black;
+    border-radius: 5px;
     transition: background-color 0.3s;
-    box-shadow: 0 6px 5px rgba(0, 0, 1, 0.6);
 }
 
 .btn:hover {
     background-color: #ddd;
 }
 
-/* Form styles */
+/* Form Styling */
 form {
-    border: 1px solid black;
-    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
     border-radius: 10px;
-    margin-top: 10px;
-    font-size: 1em;
-    text-align: center;
-    background-color: #f0f0f0;
-    transition: background-color 0.3s;
-    box-shadow: 0 6px 5px rgba(0, 0, 1, 0.6);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1em;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: antiquewhite;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Media Queries for Larger Screens */
 @media (min-width: 768px) {
     header {
-        flex-direction: row; /* Align navigation and logo side-by-side */
-        justify-content: space-around;
-        padding: 10px 5px;
-    }
-
-    nav {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 15px 30px;
     }
 
     .item {
         flex-direction: row;
         justify-content: space-between;
-        margin: 20px;
+        text-align: left;
     }
-    
+
     h2 {
         font-size: 2em;
     }
 
     h4 {
         font-size: 1.25em;
-    }
-
-    .btn {
-        font-size: 1.1em;
-    }
-
-    nav a {
-        font-size: 1.1em;
     }
 }
 
